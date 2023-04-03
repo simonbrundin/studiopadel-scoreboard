@@ -24,7 +24,7 @@
 html, body {margin:0; padding:0;}
 em {font-style:normal;}
 .box, div {box-sizing: border-box; display:flex; align-items:center; height:100%;}
-.container {position:relative; box-sizing: border-box; height:auto; float:left; clear:both; width:auto; display:grid; column-gap: 1vw; background:var(--bkgimage); color:var(--text); border-left:solid 2vw var(--bordercolors); padding:.3vw; font-family: 'Bebas Neue', sans-serif;
+.container {position:relative; box-sizing: border-box; height:auto; float:left; clear:both; width:auto; display:grid; column-gap: 1vw; background:#002c5c; color:var(--text); border-left:solid 2vw var(--bordercolors); padding:.3vw; font-family: 'Bebas Neue', sans-serif;
 transform:skew(var(--skew));}
 
 .boxtimer {padding:var(--timerpadding); float:left; background:var(--bkgmedium);}
