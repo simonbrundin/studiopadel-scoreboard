@@ -1,1 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@300&display=swap');
 
+/*----- Classi comuni ----*/
+:root {
+--skew: 0deg;
+--antiskew: -10deg;
+--text: #fff;
+--textinverted: #eee;
+--bordercolors: #333;
+--bkgimage: url(https://res.cloudinary.com/simonemanini/image/upload/v1640540568/Flexystyles/darkside_bsnwbe.jpg);
+--bkgdark: #eee;
+--bkgmedium: rgba(82,82,82,.5);
+--signalcolor: red;
+--signaloff: #666;
+
+--timerwidth:2.5em;
+--timerpadding: 0 .5vw;
+--pointswidth:1.5em;
+--pointspadding: 0 .5vw;
+--momentwidth:1.7em;
+--labelsmargin: .1em;
+}
+
+html, body {margin:0; padding:0;}
+em {font-style:normal;}
+.box, div {box-sizing: border-box; display:flex; align-items:center; height:100%;}
+.container {position:relative; box-sizing: border-box; height:auto; float:left; clear:both; width:auto; display:grid; column-gap: 1vw; background:var(--bkgimage); color:var(--text); border-left:solid 2vw var(--bordercolors); padding:.3vw; font-family: 'Rajdhani', sans-serif;
+transform:skew(var(--skew));}
+
+.boxtimer {padding:var(--timerpadding); float:left; background:var(--bkgmedium);}
+.boxpoints {padding:var(--pointspadding); float:left;background:var(--bkgmedium); font-weight:bold;}
+.boxovertimeon {background:var(--signalcolor);}
+
+.sgrlogo {background-size: contain !important;}
+
+
+/*---- TENNIS --------*/
+.containertennis {grid-template: auto / auto; column-gap:0; font-size: 5.5vw;}
+.containertennis .box {justify-content:center;}
+.containertennis .boxteams {justify-content:flex-start;}
+/* posizioni */
+.containertennis .sgrlogo {grid-column: 2/3; grid-row: 1/2;}
+.containertennis .boxhomeservice {grid-column: 2/3; grid-row: 2/3;}
+.containertennis .boxawayservice {grid-column: 2/3; grid-row: 3/4;}
+.containertennis .boxhometeam {grid-column: 1/2; grid-row: 2/3;}
+.containertennis .boxawayteam {grid-column: 1/2; grid-row: 3/4;}
+.containertennis .labelpoints {grid-column: 3/4; grid-row: 1/2;}
+.containertennis .boxhomepoints {grid-column: 3/4; grid-row: 2/3;}
+.containertennis .boxawaypoints {grid-column: 3/4; grid-row: 3/4;}
+.containertennis .labelgames {grid-column: 4/5; grid-row: 1/2;}
+.containertennis .boxhomegames {grid-column: 4/5; grid-row: 2/3;}
+.containertennis .boxawaygames {grid-column: 4/5; grid-row: 3/4;}
