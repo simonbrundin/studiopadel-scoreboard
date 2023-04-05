@@ -6,11 +6,11 @@
 --antiskew: -10deg;
 --text: #fff;
 --textinverted: #eee;
---bordercolors: #ad1667;
+--bordercolors: #012c5c;
 --bkgimage: url(https://res.cloudinary.com/simonemanini/image/upload/v1640540568/Flexystyles/darkside_bsnwbe.jpg);
 --bkgdark: #eee;
---bkgmedium: rgba(82,82,82,.5);
---signalcolor: #ad1667;
+--bkgmedium: #e2047c;
+--signalcolor: #e2047c;
 --signaloff: #666;
 
 --timerwidth:2.5em;
