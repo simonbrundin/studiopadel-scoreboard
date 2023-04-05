@@ -63,7 +63,7 @@ transform:skew(var(--skew));}
 .containertennis .boxpoints {min-width:var(--pointswidth);}
 .containertennis .boxset, 
 .containertennis .boxgames {padding: 0 .1em; border-right-style: solid; border-right-width: .05em; border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #555, rgba(0, 0, 0, 0) ) 1 100%; min-width:1em;}
-.containertennis .boxgames {background: var(--bkgmedium); border-left-style: solid; border-left-width: .05em; border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #252726, rgba(0, 0, 0, 0) ) 1 100%;}
+.containertennis .boxgames {background: var(--bkgmedium); border-left-style: solid; border-left-width: .05em; border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ) 1 100%;}
 .containertennis .boxoff {display:none;}
 
 
