@@ -38,15 +38,32 @@ transform:skew(var(--skew));}
 .containertennis {grid-template: auto / auto; column-gap:0; font-size: 5.5vw;}
 .containertennis .box {justify-content:center;}
 .containertennis .boxteams {justify-content:flex-start;}
-/* posizioni */
-.containertennis .sgrlogo {grid-column: 2/3; grid-row: 1/2;}
-.containertennis .boxhomeservice {grid-column: 2/3; grid-row: 2/3;}
-.containertennis .boxawayservice {grid-column: 2/3; grid-row: 3/4;}
-.containertennis .boxhometeam {grid-column: 1/2; grid-row: 2/3;}
-.containertennis .boxawayteam {grid-column: 1/2; grid-row: 3/4;}
-.containertennis .labelpoints {grid-column: 3/4; grid-row: 1/2;}
-.containertennis .boxhomepoints {grid-column: 3/4; grid-row: 2/3;}
-.containertennis .boxawaypoints {grid-column: 3/4; grid-row: 3/4;}
-.containertennis .labelgames {grid-column: 4/5; grid-row: 1/2;}
-.containertennis .boxhomegames {grid-column: 4/5; grid-row: 2/3;}
-.containertennis .boxawaygames {grid-column: 4/5; grid-row: 3/4;}
+/* posizioni set */
+.containertennis .boxoff {border:0; padding:0;}
+.containertennis .boxon {border-left: solid 2px var(--linee);}
+
+.containertennis #set_1_points_1 {grid-column:5/6; grid-row:2/3;}
+.containertennis #set_1_points_2 {grid-column:5/6; grid-row:3/4;}
+.containertennis #set_2_points_1 {grid-column:6/7; grid-row:2/3;}
+.containertennis #set_2_points_2 {grid-column:6/7; grid-row:3/4;}
+.containertennis #set_3_points_1 {grid-column:7/8; grid-row:2/3;}
+.containertennis #set_3_points_2 {grid-column:7/8; grid-row:3/4;}
+.containertennis #set_4_points_1 {grid-column:8/9; grid-row:2/3;}
+.containertennis #set_4_points_2 {grid-column:8/9; grid-row:3/4;}
+.containertennis #set_5_points_1 {grid-column:9/10; grid-row:2/3;}
+.containertennis #set_5_points_2 {grid-column:9/10; grid-row:3/4;}
+
+
+.containertennis .label {font-size:.6em; justify-content:center;}
+.containertennis .labelgames {font-size:.01em; color:transparent;}
+.containertennis .labelgames:before {content:"G"; font-size:60em; color:white;}
+.containertennis .boxservice {min-width:3vw;}
+.containertennis .boxservice .okservice {width:.4em; height:.5em; background:var(--signalcolor); clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%, 0% 50%);}
+
+.containertennis .boxpoints {min-width:var(--pointswidth);}
+.containertennis .boxset, 
+.containertennis .boxgames {padding: 0 .1em; border-right-style: solid; border-right-width: .05em; border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #555, rgba(0, 0, 0, 0) ) 1 100%; min-width:1em;}
+.containertennis .boxgames {background: var(--bkgmedium); border-left-style: solid; border-left-width: .05em; border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #252726, rgba(0, 0, 0, 0) ) 1 100%;}
+.containertennis .boxoff {display:none;}
+
+
